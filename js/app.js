@@ -14,6 +14,7 @@ addBtn.addEventListener("click", ()=>{
     } else {
         addToLocalStorage(createLiElement(Date.now(), inputTodoElement.value));
     }
+    inputTodoElement.value = "";
 })
 
 function createLiElement(pID, pText, pChecked = false, preventAnimation = false){
